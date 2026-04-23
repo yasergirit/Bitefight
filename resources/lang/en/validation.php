@@ -1,152 +1,68 @@
 <?php
 
 return [
-
-    /*
-    |--------------------------------------------------------------------------
-    | Validation Language Lines
-    |--------------------------------------------------------------------------
-    |
-    | The following language lines contain the default error messages used by
-    | the validator class. Some of these rules have multiple versions such
-    | as the size rules. Feel free to tweak each of these messages here.
-    |
-    */
-
-    'accepted'             => 'The :attribute must be accepted.',
-    'active_url'           => 'The :attribute is not a valid URL.',
-    'after'                => 'The :attribute must be a date after :date.',
-    'after_or_equal'       => 'The :attribute must be a date after or equal to :date.',
-    'alpha'                => 'The :attribute may only contain letters.',
-    'alpha_dash'           => 'The :attribute may only contain letters, numbers, and dashes.',
-    'alpha_num'            => 'The :attribute may only contain letters and numbers.',
-    'array'                => 'The :attribute must be an array.',
-    'before'               => 'The :attribute must be a date before :date.',
-    'before_or_equal'      => 'The :attribute must be a date before or equal to :date.',
-    'between'              => [
-        'numeric' => 'The :attribute must be between :min and :max.',
-        'file'    => 'The :attribute must be between :min and :max kilobytes.',
-        'string'  => 'The :attribute must be between :min and :max characters.',
-        'array'   => 'The :attribute must have between :min and :max items.',
+    'accepted' => ':attribute alani kabul edilmelidir.',
+    'active_url' => ':attribute gecerli bir URL degil.',
+    'after' => ':attribute, :date sonrasinda bir tarih olmali.',
+    'alpha' => ':attribute yalnizca harf icerebilir.',
+    'alpha_dash' => ':attribute yalnizca harf, rakam ve tire icerebilir.',
+    'alpha_num' => ':attribute yalnizca harf ve rakam icerebilir.',
+    'array' => ':attribute bir dizi olmali.',
+    'between' => [
+        'numeric' => ':attribute :min ile :max arasinda olmali.',
+        'file' => ':attribute :min ile :max KB arasinda olmali.',
+        'string' => ':attribute :min ile :max karakter arasinda olmali.',
+        'array' => ':attribute :min ile :max oge icermeli.',
     ],
-    'boolean'              => 'The :attribute field must be true or false.',
-    'confirmed'            => 'The :attribute confirmation does not match.',
-    'date'                 => 'The :attribute is not a valid date.',
-    'date_format'          => 'The :attribute does not match the format :format.',
-    'different'            => 'The :attribute and :other must be different.',
-    'digits'               => 'The :attribute must be :digits digits.',
-    'digits_between'       => 'The :attribute must be between :min and :max digits.',
-    'dimensions'           => 'The :attribute has invalid image dimensions.',
-    'distinct'             => 'The :attribute field has a duplicate value.',
-    'email'                => 'The :attribute must be a valid email address.',
-    'exists'               => 'The selected :attribute is invalid.',
-    'file'                 => 'The :attribute must be a file.',
-    'filled'               => 'The :attribute field must have a value.',
-    'image'                => 'The :attribute must be an image.',
-    'in'                   => 'The selected :attribute is invalid.',
-    'in_array'             => 'The :attribute field does not exist in :other.',
-    'integer'              => 'The :attribute must be an integer.',
-    'ip'                   => 'The :attribute must be a valid IP address.',
-    'ipv4'                 => 'The :attribute must be a valid IPv4 address.',
-    'ipv6'                 => 'The :attribute must be a valid IPv6 address.',
-    'json'                 => 'The :attribute must be a valid JSON string.',
-    'max'                  => [
-        'numeric' => 'The :attribute may not be greater than :max.',
-        'file'    => 'The :attribute may not be greater than :max kilobytes.',
-        'string'  => 'The :attribute may not be greater than :max characters.',
-        'array'   => 'The :attribute may not have more than :max items.',
+    'confirmed' => ':attribute tekrar alaniyla eslesmiyor.',
+    'email' => ':attribute gecerli bir e-posta olmali.',
+    'max' => [
+        'numeric' => ':attribute :max degerinden buyuk olamaz.',
+        'file' => ':attribute :max KB degerinden buyuk olamaz.',
+        'string' => ':attribute :max karakterden uzun olamaz.',
+        'array' => ':attribute en fazla :max oge icerebilir.',
     ],
-    'mimes'                => 'The :attribute must be a file of type: :values.',
-    'mimetypes'            => 'The :attribute must be a file of type: :values.',
-    'min'                  => [
-        'numeric' => 'The :attribute must be at least :min.',
-        'file'    => 'The :attribute must be at least :min kilobytes.',
-        'string'  => 'The :attribute must be at least :min characters.',
-        'array'   => 'The :attribute must have at least :min items.',
+    'min' => [
+        'numeric' => ':attribute en az :min olmali.',
+        'file' => ':attribute en az :min KB olmali.',
+        'string' => ':attribute en az :min karakter olmali.',
+        'array' => ':attribute en az :min oge icermeli.',
     ],
-    'not_in'               => 'The selected :attribute is invalid.',
-    'numeric'              => 'The :attribute must be a number.',
-    'present'              => 'The :attribute field must be present.',
-    'regex'                => 'The :attribute format is invalid.',
-    'required'             => 'The :attribute field is required.',
-    'required_if'          => 'The :attribute field is required when :other is :value.',
-    'required_unless'      => 'The :attribute field is required unless :other is in :values.',
-    'required_with'        => 'The :attribute field is required when :values is present.',
-    'required_with_all'    => 'The :attribute field is required when :values is present.',
-    'required_without'     => 'The :attribute field is required when :values is not present.',
-    'required_without_all' => 'The :attribute field is required when none of :values are present.',
-    'same'                 => 'The :attribute and :other must match.',
-    'size'                 => [
-        'numeric' => 'The :attribute must be :size.',
-        'file'    => 'The :attribute must be :size kilobytes.',
-        'string'  => 'The :attribute must be :size characters.',
-        'array'   => 'The :attribute must contain :size items.',
-    ],
-    'string'               => 'The :attribute must be a string.',
-    'timezone'             => 'The :attribute must be a valid zone.',
-    'unique'               => 'The :attribute has already been taken.',
-    'uploaded'             => 'The :attribute failed to upload.',
-    'url'                  => 'The :attribute format is invalid.',
-
-    /*
-    |--------------------------------------------------------------------------
-    | Custom Validation Language Lines
-    |--------------------------------------------------------------------------
-    |
-    | Here you may specify custom validation messages for attributes using the
-    | convention "attribute.rule" to name the lines. This makes it quick to
-    | specify a specific custom language line for a given attribute rule.
-    |
-    */
-
+    'required' => ':attribute alani zorunludur.',
+    'string' => ':attribute bir metin olmali.',
+    'unique' => ':attribute zaten kullaniliyor.',
+    'url' => ':attribute bicimi gecersiz.',
     'custom' => [
         'agb' => [
-            'required' => 'Please accept the Terms Of Use and the Privacy Policy to participate.',
+            'required' => 'Gece kaydini tamamlamak icin kullanim kosullarini kabul etmelisin.',
         ],
-
-		'name' => [
-			'required' => 'Player name must have at least three characters!',
-			'unique' => 'Player name already in use!'
-		],
-
-		'pass' => [
-			'required' => 'The password must have at least 3 characters'
-		],
-
-		'email' => [
-			'required' => 'Please enter your e-mail address',
-			'email' => 'This e-mail address is invalid.',
-			'unique' => 'This e-mail address already belongs to a creature of the night.'
-		],
-
-		'invalid_login' => 'The entered username or password is wrong.',
-		'validation_username_character_error' => 'Please enter at least 3 characters for your name.',
-		'validation_username_used' => 'Chosen username is already in use.',
-		'validation_email_invalid' => 'Please enter an invalid email.',
-		'validation_email_used' => 'Chosen email is already in use.',
-		'validation_terms_required' => 'Please accept the terms and conditions.',
-		'validation_password_character_error' => 'Please enter a valid password.',
-		'validation_ajax_username_short' => 'name too short',
-		'validation_ajax_username_used' => 'name in use',
-		'validation_ajax_email_invalid' => 'invalid mail',
-		'validation_ajax_email_used' => 'mail in use',
-		'validation_login_invalid_credentials' => 'Invalid credentials.',
-		'validation_clan_name_used' => 'Sorry, this clan name is already in use',
-		'validation_clan_tag_used' => 'Sorry, this clan tag is already in use',
-		'validation_clan_name_or_tag_short' => 'Please enter at least two characters into name and tag.',
+        'name' => [
+            'required' => 'Oyuncu adi en az uc karakter olmali.',
+            'unique' => 'Bu oyuncu adi zaten kullaniliyor.',
+        ],
+        'pass' => [
+            'required' => 'Sifre en az uc karakter olmali.',
+        ],
+        'email' => [
+            'required' => 'Lutfen e-posta adresini gir.',
+            'email' => 'Bu e-posta adresi gecersiz.',
+            'unique' => 'Bu e-posta adresi baska bir Night Stamp hesabi tarafindan kullaniliyor.',
+        ],
+        'invalid_login' => 'Girilen oyuncu adi veya sifre hatali.',
+        'validation_username_character_error' => 'Oyuncu adi en az uc karakter olmali.',
+        'validation_username_used' => 'Secilen oyuncu adi kullaniliyor.',
+        'validation_email_invalid' => 'Gecerli bir e-posta gir.',
+        'validation_email_used' => 'Secilen e-posta kullaniliyor.',
+        'validation_terms_required' => 'Kullanım kosullarini kabul et.',
+        'validation_password_character_error' => 'Gecerli bir sifre gir.',
+        'validation_ajax_username_short' => 'ad cok kisa',
+        'validation_ajax_username_used' => 'ad kullanimda',
+        'validation_ajax_email_invalid' => 'eposta gecersiz',
+        'validation_ajax_email_used' => 'eposta kullanimda',
+        'validation_login_invalid_credentials' => 'Kimlik bilgileri gecersiz.',
+        'validation_clan_name_used' => 'Bu lonca adi zaten kullaniliyor.',
+        'validation_clan_tag_used' => 'Bu lonca etiketi zaten kullaniliyor.',
+        'validation_clan_name_or_tag_short' => 'Lonca adi ve etiketi en az iki karakter olmali.',
     ],
-
-    /*
-    |--------------------------------------------------------------------------
-    | Custom Validation Attributes
-    |--------------------------------------------------------------------------
-    |
-    | The following language lines are used to swap attribute place-holders
-    | with something more reader friendly such as E-Mail Address instead
-    | of "email". This simply helps us make messages a little cleaner.
-    |
-    */
-
     'attributes' => [],
-
 ];

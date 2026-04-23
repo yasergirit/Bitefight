@@ -242,24 +242,24 @@ class UserController extends Controller
 
 		$startRank = ($page - 1) * 50 + 1;
 
-		$vampireCount = User::where('race', 1)->count();
-		$werewolfCount = User::where('race', 2)->count();
-		$vampireBlood = User::where('race', 1)
+		$houseCount = User::where('race', 1)->count();
+		$swarmCount = User::where('race', 2)->count();
+		$houseEssence = User::where('race', 1)
 			->select(DB::raw('SUM(s_booty) AS booty'))
 			->first()->booty;
-		$werewolfBlood = User::where('race', 2)
+		$swarmEssence = User::where('race', 2)
 			->select(DB::raw('SUM(s_booty) AS booty'))
 			->first()->booty;
-		$vampireBattle = User::where('race', 1)
+		$houseBattles = User::where('race', 1)
 			->select(DB::raw('SUM(s_fight) AS fights'))
 			->first()->fights;
-		$werewolfBattle = User::where('race', 2)
+		$swarmBattles = User::where('race', 2)
 			->select(DB::raw('SUM(s_fight) AS fights'))
 			->first()->fights;
-		$vampireGold = User::where('race', 1)
+		$houseGold = User::where('race', 1)
 			->select(DB::raw('SUM(gold) AS gold'))
 			->first()->gold;
-		$werewolfGold = User::where('race', 2)
+		$swarmGold = User::where('race', 2)
 			->select(DB::raw('SUM(gold) AS gold'))
 			->first()->gold;
 
@@ -281,14 +281,14 @@ class UserController extends Controller
 			'show' => $showArr,
 			'results' => $result,
 			'startRank' => $startRank,
-			'vampireCount' => $vampireCount,
-			'werewolfCount' => $werewolfCount,
-			'vampireBlood' => $vampireBlood,
-			'werewolfBlood' => $werewolfBlood,
-			'vampireBattle' => $vampireBattle,
-			'werewolfBattle' => $werewolfBattle,
-			'vampireGold' => $vampireGold,
-			'werewolfGold' => $werewolfGold,
+			'houseCount' => $houseCount,
+			'swarmCount' => $swarmCount,
+			'houseEssence' => $houseEssence,
+			'swarmEssence' => $swarmEssence,
+			'houseBattles' => $houseBattles,
+			'swarmBattles' => $swarmBattles,
+			'houseGold' => $houseGold,
+			'swarmGold' => $swarmGold,
 			'myPosLink' => $myPosLink,
 			'showHeadLink' => $showHeadLink
 		]);

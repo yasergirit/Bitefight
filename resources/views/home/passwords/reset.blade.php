@@ -27,7 +27,7 @@
                     <div class="table-wrap">
                         <table cellpadding="0" cellspacing="0" border="0" width="100%">
                             <tbody><tr>
-                                <td align="center" valign="top"><img src="{{asset('img/symbols/race1.gif')}}" alt="{{__('general.vampire')}}"></td>
+                                <td align="center" valign="top"><img src="{{asset('img/night-stamp/faction-house-card.svg')}}" alt="{{__('general.faction_house')}}" width="220"></td>
                                 <td valign="top">
                                     <table cellpadding="2" cellspacing="2" border="0" width="100%">
                                         <tbody>
@@ -36,13 +36,13 @@
                                             <td><input class="input" type="text" name="email" size="30" maxlength="130" value="{{ $email or old('email') }}" required autofocus></td>
                                         </tr>
                                         <tr>
-                                            <td>Password</td>
+                                            <td>{{__('general.password')}}</td>
                                             <td>
                                                 <input id="password" type="password" class="form-control" name="password" required>
                                             </td>
                                         </tr>
                                         <tr>
-                                            <td>Confirm Password</td>
+                                            <td>Şifre Tekrar</td>
                                             <td>
                                                 <input id="password-confirm" type="password" class="form-control" name="password_confirmation" required>
                                             </td>
@@ -54,7 +54,7 @@
                                         </tbody>
                                     </table>
                                 </td>
-                                <td align="center" valign="top"><img src="{{asset('img/symbols/race2.gif')}}" alt="{{__('general.werewolf')}}"></td>
+                                <td align="center" valign="top"><img src="{{asset('img/night-stamp/faction-swarm-card.svg')}}" alt="{{__('general.faction_swarm')}}" width="220"></td>
                             </tr>
                             </tbody>
                         </table>
@@ -69,3 +69,4 @@
         </div>
     </div>
 @endsection
+

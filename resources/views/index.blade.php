@@ -26,7 +26,7 @@
 	<script src="{{asset('js/jquery-plugin.js')}}"></script>
 	<script src="{{asset('js/jquery-countdown-2.1.0.js')}}"></script>
 	<script src="{{asset('js/jquery-ui-1.12.1.js')}}"></script>
-	<script src="{{asset('js/jquery-ui-chatbox.js')}}"></script>
+	<script src="{{asset('js/ui-dialog-box.js')}}"></script>
 	<script src="{{asset('js/tipped.js')}}"></script>
 	<script src="{{asset('js/tipped-spinners.js')}}"></script>
 	<script src="{{asset('js/init-game.js')}}"></script>
@@ -37,7 +37,7 @@
 
 	<div id="header">
 		<!-- if gates of underworld are open <div id="feuerheader"></div> <div id="decoLampGateOpen"></div> -->
-		<h1>@yield('header', __('general.menu_header_bitefight'))</h1>
+		<h1>@yield('header', __('general.menu_header'))</h1>
 		<div id="decoLamp"></div>
 	</div>
 
@@ -64,3 +64,4 @@
 
 </body>
 </html>
+

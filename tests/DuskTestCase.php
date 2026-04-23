@@ -27,7 +27,7 @@ abstract class DuskTestCase extends BaseTestCase
      */
     protected function baseUrl()
     {
-        return env('APP_URL', 'http://bitefight.vm');
+        return env('APP_URL', 'http://nightstamp.vm');
     }
 
     /**

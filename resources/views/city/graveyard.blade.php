@@ -36,7 +36,7 @@
 									if (periods[3] > 0) {
 										days = periods[3]+'d ';
 									}
-									document.title =  days+periods[4] + ':' + twoDigits(periods[5]) + ':' + twoDigits(periods[6])+' BiteFight';
+									document.title =  days+periods[4] + ':' + twoDigits(periods[5]) + ':' + twoDigits(periods[6])+' Night Stamp';
 								}
 							});
 						});

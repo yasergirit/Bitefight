@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="710" height="381" viewBox="0 0 710 381">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#08131d"/>
+      <stop offset="55%" stop-color="#152531"/>
+      <stop offset="100%" stop-color="#2d140f"/>
+    </linearGradient>
+    <linearGradient id="mist" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#efe1c2" stop-opacity=".18"/>
+      <stop offset="100%" stop-color="#efe1c2" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+  <rect width="710" height="381" fill="url(#bg)"/>
+  <circle cx="520" cy="70" r="52" fill="#f1e4c4" opacity=".8"/>
+  <rect y="250" width="710" height="131" fill="#0b1015"/>
+  <path d="M0 260 C90 210 160 230 220 205 C290 175 350 210 420 190 C520 160 620 225 710 180 L710 381 L0 381 Z" fill="#111a21"/>
+  <path d="M0 280 C100 245 180 275 250 245 C330 215 420 240 500 220 C590 197 648 230 710 214 L710 381 L0 381 Z" fill="#17242d"/>
+  <rect x="30" y="24" width="250" height="86" rx="12" fill="#091017" opacity=".7"/>
+  <text x="52" y="58" fill="#efe1c2" font-size="34" font-family="Georgia, serif">Night Stamp</text>
+  <text x="52" y="88" fill="#cda56c" font-size="18" font-family="Georgia, serif">Gece iner, muhur konusur.</text>
+  <rect x="56" y="154" width="210" height="134" rx="18" fill="#111a23" stroke="#b88c53"/>
+  <rect x="448" y="118" width="210" height="150" rx="18" fill="#26151b" stroke="#d0b27a"/>
+  <text x="83" y="198" fill="#efe1c2" font-size="22" font-family="Georgia, serif">Gece Hanesi</text>
+  <text x="83" y="228" fill="#aebbc6" font-size="14" font-family="Verdana, sans-serif">Arsiv, zarafet ve soguk</text>
+  <text x="83" y="248" fill="#aebbc6" font-size="14" font-family="Verdana, sans-serif">hesaplarla geceyi sekillendirir.</text>
+  <text x="474" y="164" fill="#efe1c2" font-size="22" font-family="Georgia, serif">Kul Surusu</text>
+  <text x="474" y="194" fill="#c6b5ab" font-size="14" font-family="Verdana, sans-serif">Kor, toz ve yeminle ayakta</text>
+  <text x="474" y="214" fill="#c6b5ab" font-size="14" font-family="Verdana, sans-serif">kalan savasci topluluk.</text>
+  <rect width="710" height="381" fill="url(#mist)"/>
+</svg>

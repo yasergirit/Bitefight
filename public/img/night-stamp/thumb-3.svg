@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="170" height="86" viewBox="0 0 170 86">
+  <rect width="170" height="86" rx="14" fill="#182118"/>
+  <path d="M28 66 L58 20 L88 66 Z" fill="#8aa17b"/>
+  <path d="M78 66 L108 16 L138 66 Z" fill="#b7c69b"/>
+  <text x="16" y="24" fill="#efe1c2" font-size="16" font-family="Georgia, serif">Yemin Kalesi</text>
+</svg>

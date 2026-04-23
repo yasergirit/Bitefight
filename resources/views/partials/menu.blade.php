@@ -15,7 +15,7 @@
 			<li class="{{(\Illuminate\Support\Facades\Request::is('city*')) ? 'active' : ''}}"><a href="{{url('/city/index')}}" target="_top">{{__('general.menu_city')}}</a></li>
 			<li class="free-space {{(\Illuminate\Support\Facades\Request::is('hunt*')) ? 'active' : ''}}"><a href="{{url('/hunt/index')}}" target="_top">{{__('general.menu_hunt')}}</a></li>
 			<li id="premium" class="{{(\Illuminate\Support\Facades\Request::is('voodoo')) ? 'active' : ''}}">
-				<img border="0" src="{{asset('img/voodoo/res3_rotation.gif')}}">
+				<img border="0" src="{{asset('img/night-stamp/sigil-currency.svg')}}">
 				<a href="{{url('/voodoo')}}" target="_top">{{__('general.menu_voodoo_shop')}}</a>
 			</li>
 			<li class="{{(\Illuminate\Support\Facades\Request::is('clan*')) ? 'active' : ''}}"><a href="{{url('/clan/index')}}" class="{{$clan_application_count ? 'newmessage' : ''}}" target="_top">{{__('general.menu_clan')}}</a></li>

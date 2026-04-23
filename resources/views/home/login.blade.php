@@ -13,7 +13,7 @@
                 <div class="table-wrap">
                     <table width="100%">
                         <tr>
-                            <td><img src="{{asset('img/symbols/race1.gif')}}" alt="{{__('general.vampire')}}" ></td>
+                            <td><img src="{{asset('img/night-stamp/faction-house-card.svg')}}" alt="{{__('general.faction_house')}}" width="220"></td>
                             <td>
                                 <form id="loginForm" name="loginForm" method="POST">
 									{{csrf_field()}}
@@ -35,7 +35,7 @@
                                     </table>
                                 </form>
                             </td>
-                            <td><img src="{{asset('img/symbols/race2.gif')}}" alt="{{__('general.werewolf')}}" ></td>
+                            <td><img src="{{asset('img/night-stamp/faction-swarm-card.svg')}}" alt="{{__('general.faction_swarm')}}" width="220"></td>
                         </tr>
                     </table>
 
@@ -56,3 +56,4 @@
         </div>
     </div>
 @endsection
+

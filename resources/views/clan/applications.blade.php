@@ -34,11 +34,7 @@
 								<input class="btn" type="submit" name="ann" value="OK, accepted">
 							</div>
 						</div>
-						{{--Todo: open report link--}}
-						<!--<div class="btn-left left"><div class="btn-right">
-								<a class="btn" href="https://s202-en.bitefight.gameforge.com:443/msg/complain/capplication?__token=111a3ac6ddee6a633dc387b12a37a7fa&amp;id=2908&amp;cc=2c770af">( report )</a>
-							</div>
-						</div>-->
+						<span class="btn" style="display:inline-block;">( yerel denetim kaydi )</span>
 					</form>
 					@endforeach
 					<br class="clearfloat">

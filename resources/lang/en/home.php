@@ -1,43 +1,26 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: Osein
- * Date: 1/13/2018
- * Time: 4:40 PM
- */
 
 return [
-
-	/*
-	|--------------------------------------------------------------------------
-	| Home page strings
-	|--------------------------------------------------------------------------
-	*/
-
-	'home_header_big' => 'Speed server x4',
-	'home_splash_text' => 'The struggle between Vampires and <br> Werewolves has been rampaging for centuries.<br> It`s your destiny to decide this battle`s outcome!',
-	'home_index_play_now' => 'Play now for free!',
-	'home_index_thumb1' => 'Roam the city<br>looking for new victims.',
-	'home_index_thumb2' => 'Equip yourself to defeat <br> your enemies.',
-	'home_index_thumb3' => 'Build an immense stronghold<br> with your friends.',
-	'home_login_header' => 'Please enter your name and password to login',
-	'home_login_forgot_password' => 'Have you forgotten your password?',
-	'home_forgot_pass_header' => 'Please enter your name and e-mail-address',
-	'home_register_select_race' => 'Choose your race!',
-	'home_register_header' => 'BiteFight can be played for free.',
-	'home_register_unnecessary_info' => 'Please click "send" after filling out all given fields,<br> to join the game',
-	'home_register_name_label' => 'Choose your name',
-	'home_register_password_label' => 'Please enter a password',
-	'home_register_mail_label' => 'Your e-mail address',
-	'home_register_activation_info' => 'An e-mail containing your activation link will be sent to your email address. Please activate the account within the next 3 days.',
-	'home_register_accept_agb' => 'I accept the Terms and Conditions.',
-
-	// Highscore Strings
-	'highscore_my_position' => 'My position',
-	'highscore_player_highscore' => 'Player - Highscore',
-	'highscore_clan_highscore' => 'Clan - Highscore',
-	'highscore_show_limit' => '(Maximum of 5 options possible)',
-
-    'news_empty' => 'No news from the elders of the night.',
-
+    'home_header_big' => 'Açılış bölgesi x4',
+    'home_splash_text' => 'Night Stamp gecesinde iki hizip aynı mühür için yemin eder.<br>Gece Hanesi ile Kül Sürüsü arasında yerini seç,<br>ilçeleri denetle ve kendi gölge düzenini kur.',
+    'home_index_play_now' => 'Ücretsiz başla',
+    'home_index_thumb1' => 'Sisli bölgelerde iz sür,<br>kaynak ve hedef topla.',
+    'home_index_thumb2' => 'Mühürlü ekipmanlarla<br>gücünü şekillendir.',
+    'home_index_thumb3' => 'Sığınağını ve loncanı<br>geceye karşı büyüt.',
+    'home_login_header' => 'Night Stamp hesabınla giriş yap',
+    'home_login_forgot_password' => 'Şifreni mi unuttun?',
+    'home_forgot_pass_header' => 'Oyuncu adını ve e-posta adresini gir',
+    'home_register_select_race' => 'Hizibini seç',
+    'home_register_header' => 'Night Stamp ücretsiz oynanır.',
+    'home_register_unnecessary_info' => 'Aşağıdaki alanları doldurup gönder düğmesine bastığında gece kaydın tamamlanır.',
+    'home_register_name_label' => 'Oyuncu adın',
+    'home_register_password_label' => 'Şifren',
+    'home_register_mail_label' => 'E-posta adresin',
+    'home_register_activation_info' => 'Etkinleştirme bağlantısı e-posta adresine gönderilir. Hesabını 3 gün içinde onaylaman gerekir.',
+    'home_register_accept_agb' => 'Kullanım şartlarını ve gizlilik kurallarını kabul ediyorum.',
+    'highscore_my_position' => 'Sıramı göster',
+    'highscore_player_highscore' => 'Oyuncu sıralaması',
+    'highscore_clan_highscore' => 'Lonca sıralaması',
+    'highscore_show_limit' => '(En fazla 5 alan seçebilirsin)',
+    'news_empty' => 'Gece arşivinde henüz yeni kayıt yok.',
 ];

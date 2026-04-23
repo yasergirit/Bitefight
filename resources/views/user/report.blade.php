@@ -24,7 +24,7 @@
                 <p><strong>End of fight:</strong> The <?php if($report['attacker']['total_damage'] > $report['defender']['total_damage']) echo 'attackers'; else echo 'defenders'; ?> have caused more damage (<?php if($report['attacker']['total_damage'] > $report['defender']['total_damage']): echo round($report['attacker']['total_damage'], 2); else: echo round($report['defender']['total_damage'], 2); endif; ?> : <?php if($report['attacker']['total_damage'] > $report['defender']['total_damage']): echo round($report['defender']['total_damage'], 2); else: echo round($report['attacker']['total_damage'], 2); endif; ?>)!</p>
                 <p><strong>Health (after battle):</strong> <?php if($report['attacker']['id'] == $user->id) echo prettyNumber($report['attacker']['hp_end']); else echo prettyNumber($report['defender']['hp_end']); ?></p>
                 <?php if($report['earned_gold'] > 0 || $report['earned_bonus_gold'] > 0): ?>
-                <p class="gold"><?php if($report['attacker']['total_damage'] > $report['defender']['total_damage']) echo e($attacker['name']); else echo e($defender['name']); ?> captured: <?php if($report['earned_gold'] > 0): ?><?php echo prettyNumber($report['earned_gold']); ?> <img src="https://s202-en.bitefight.gameforge.com:443/img/symbols/res2.gif" title="Gold" align="absmiddle" border="0"> Gold<?php endif; ?><?php if($report['earned_bonus_gold'] > 0): ?>&nbsp;+&nbsp;<?php echo prettyNumber($report['earned_bonus_gold']); ?> <img src="https://s202-en.bitefight.gameforge.com:443/img/symbols/res2.gif" title="Gold bonus" align="absmiddle" border="0"> Gold bonus<?php endif; ?></p>
+                <p class="gold"><?php if($report['attacker']['total_damage'] > $report['defender']['total_damage']) echo e($attacker['name']); else echo e($defender['name']); ?> topladi: <?php if($report['earned_gold'] > 0): ?><?php echo prettyNumber($report['earned_gold']); ?> <?php echo gold_image_tag(); ?><?php endif; ?><?php if($report['earned_bonus_gold'] > 0): ?>&nbsp;+&nbsp;<?php echo prettyNumber($report['earned_bonus_gold']); ?> <?php echo gold_image_tag(); ?> bonus<?php endif; ?></p>
             <?php endif; ?>
             <!-- CONTENT END -->
             </div>
@@ -756,7 +756,7 @@
                                     </td>
                                     <td>
                                         <?php if(isset($r['attacker_talent'])): ?>
-                                        <div class="tooltip" title='<?php $this->partial('partials/report_talent_tooltip_content', ['talent_obj' => $r['attacker_talent']]) ?>' style="text-align:left;"><?php echo \Bitefight\Library\Translate::_tn($r['attacker_talent']['id']); ?></div>
+                                        <div class="tooltip" title='<?php $this->partial('partials/report_talent_tooltip_content', ['talent_obj' => $r['attacker_talent']]) ?>' style="text-align:left;"><?php echo __('talents.talent_id_'.$r['attacker_talent']['id'].'_name'); ?></div>
                                         <?php else: ?>
                                         <div style="text-align: left;">not activated</div>
                                         <?php endif; ?>
@@ -809,7 +809,7 @@
                                     </td>
                                     <td>
                                         <?php if(isset($r['defender_talent'])): ?>
-                                        <div class="tooltip" title='<?php $this->partial('partials/report_talent_tooltip_content', ['talent_obj' => $r['defender_talent']]) ?>' style="text-align:left;"><?php echo \Bitefight\Library\Translate::_tn($r['defender_talent']['id']); ?></div>
+                                        <div class="tooltip" title='<?php $this->partial('partials/report_talent_tooltip_content', ['talent_obj' => $r['defender_talent']]) ?>' style="text-align:left;"><?php echo __('talents.talent_id_'.$r['defender_talent']['id'].'_name'); ?></div>
                                         <?php else: ?>
                                         <div style="text-align: left;">not activated</div>
                                         <?php endif; ?>

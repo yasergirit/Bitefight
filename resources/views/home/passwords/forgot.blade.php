@@ -28,7 +28,7 @@
 					<div class="table-wrap">
 						<table cellpadding="0" cellspacing="0" border="0" width="100%">
 							<tbody><tr>
-								<td align="center" valign="top"><img src="{{asset('img/symbols/race1.gif')}}" alt="{{__('general.vampire')}}"></td>
+								<td align="center" valign="top"><img src="{{asset('img/night-stamp/faction-house-card.svg')}}" alt="{{__('general.faction_house')}}" width="220"></td>
 								<td valign="top">
 									<table cellpadding="2" cellspacing="2" border="0" width="100%">
 										<tbody><tr>
@@ -46,7 +46,7 @@
 										</tbody>
 									</table>
 								</td>
-								<td align="center" valign="top"><img src="{{asset('img/symbols/race2.gif')}}" alt="{{__('general.werewolf')}}"></td>
+								<td align="center" valign="top"><img src="{{asset('img/night-stamp/faction-swarm-card.svg')}}" alt="{{__('general.faction_swarm')}}" width="220"></td>
 							</tr>
 							</tbody>
 						</table>
@@ -61,3 +61,4 @@
 		</div>
 	</div>
 @endsection
+

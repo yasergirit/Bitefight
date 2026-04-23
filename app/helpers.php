@@ -107,7 +107,7 @@ function getPreviousExpNeeded($level): int
 }
 
 function getRaceString($race = 1) {
-	return $race === 1 ? __('general.vampire') : __('general.werewolf');
+	return $race === 1 ? __('general.faction_house') : __('general.faction_swarm');
 }
 
 function getExpNeeded($level): int
@@ -123,10 +123,11 @@ function getLevel($exp): int
 function user_race_logo_small()
 {
 	$race = user() ? user()->getRace() : env('DEFAULT_SERVER_RACE');
+    $asset = $race === 1 ? 'faction-house-badge.svg' : 'faction-swarm-badge.svg';
 
 	return new \Illuminate\Support\HtmlString(
 		'<img src="'.
-		asset('img/symbols/race'.$race.'small.gif').'" alt="'.
+		asset('img/night-stamp/'.$asset).'" alt="'.
 		getRaceString($race).'" />');
 }
 
@@ -135,7 +136,7 @@ function gold_image_tag() {
 }
 
 function hellstone_image_tag() {
-	return new \Illuminate\Support\HtmlString('<img src="'.asset('img/symbols/res3.gif').'"  alt="'.__('general.hellstone').'" align="absmiddle" border="0" />');
+	return new \Illuminate\Support\HtmlString('<img src="'.asset('img/night-stamp/sigil-currency.svg').'"  alt="'.__('general.hellstone').'" align="absmiddle" border="0" />');
 }
 
 function fragment_image_tag() {
@@ -656,3 +657,4 @@ function getUserStatusColor($last_activity) {
 		return 'red';
 	}
 }
+

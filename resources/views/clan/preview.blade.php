@@ -73,8 +73,7 @@
 					</table>
 					<br>
 					<h2>
-						{{--Todo: report link--}}
-						{{user_race_logo_small()}}Clan description <!--<a href="https://s202-en.bitefight.gameforge.com:443/msg/complain/cprofile?id=9305&amp;cc=db627f2" class="copyright">(report)</a>-->
+						{{user_race_logo_small()}}Clan description
 					</h2>
 					<p style="text-align:center">
 						{!! $clan->descriptionHtml !!}

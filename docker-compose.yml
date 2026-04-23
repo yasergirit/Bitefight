@@ -1,0 +1,43 @@
+services:
+  app:
+    build: .
+    depends_on:
+      mysql:
+        condition: service_healthy
+    environment:
+      APP_NAME: Night Stamp
+      APP_ENV: local
+      APP_DEBUG: "true"
+      APP_URL: http://localhost:8080
+      DB_CONNECTION: mysql
+      DB_HOST: mysql
+      DB_PORT: 3306
+      DB_DATABASE: bitefight
+      DB_USERNAME: root
+      DB_PASSWORD: ""
+      MAIL_DRIVER: log
+      SESSION_LIFETIME: 1440
+    ports:
+      - "8080:80"
+    volumes:
+      - bitefight-sessions:/var/www/html/storage/framework/sessions
+
+  mysql:
+    image: mysql:5.7
+    platform: linux/amd64
+    command: --sql-mode=NO_ENGINE_SUBSTITUTION
+    environment:
+      MYSQL_ALLOW_EMPTY_PASSWORD: "yes"
+      MYSQL_DATABASE: bitefight
+    healthcheck:
+      test: ["CMD", "mysqladmin", "ping", "-h", "127.0.0.1", "-u", "root"]
+      interval: 5s
+      timeout: 3s
+      retries: 30
+    volumes:
+      - bitefight-mysql:/var/lib/mysql
+      - ./db.sql:/docker-entrypoint-initdb.d/01-db.sql:ro
+
+volumes:
+  bitefight-mysql:
+  bitefight-sessions:

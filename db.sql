@@ -6,7 +6,7 @@
 # https://github.com/sequelpro/sequelpro
 #
 # Host: 0.0.0.0 (MySQL 5.5.5-10.3.8-MariaDB-1:10.3.8+maria~jessie)
-# Database: bitefight
+# Database: night_stamp
 # Generation Time: 2018-09-27 17:22:04 +0000
 # ************************************************************
 

@@ -4,13 +4,13 @@
     @if($showRaceSelection)
 		<script language="JavaScript">
 		    p1 = new Image();
-		    p1.src = "{{asset('img/symbols/race1loginen.gif')}}";
+		    p1.src = "{{asset('img/night-stamp/faction-house-card.svg')}}";
 		    p1x = new Image();
-		    p1x.src = "{{asset('img/symbols/race1loginhoveren.gif')}}";
+		    p1x.src = "{{asset('img/night-stamp/faction-house-card.svg')}}";
 		    p2 = new Image();
-		    p2.src = "{{asset('img/symbols/race2loginen.gif')}}";
+		    p2.src = "{{asset('img/night-stamp/faction-swarm-card.svg')}}";
 		    p2x = new Image();
-		    p2x.src = "{{asset('img/symbols/race2loginhoveren.gif')}}";
+		    p2x.src = "{{asset('img/night-stamp/faction-swarm-card.svg')}}";
 		</script>
 		<div id="chooseRace">
 			<div class="wrap-top-left clearfix">
@@ -27,7 +27,7 @@
 									<a href="{{route('register', ['race' => 1])}}" onfocus="if(this.blur)this.blur()"
 									   target="_top" onmouseover="document.pic1.src = p1x.src"
 									   onmouseout="document.pic1.src = p1.src">
-										<img src="{{asset('img/symbols/race1loginen.gif')}}" alt="{{__('general.vampire')}}"
+										<img src="{{asset('img/night-stamp/faction-house-card.svg')}}" alt="{{__('general.faction_house')}}"
 											 name="pic1" border="0">
 									</a>
 								</td>
@@ -36,7 +36,7 @@
 									<a href="{{route('register', ['race' => 2])}}" onfocus="if(this.blur)this.blur()"
 									   target="_top" onmouseover="document.pic2.src = p2x.src"
 									   onmouseout="document.pic2.src = p2.src">
-										<img src="{{asset('img/symbols/race2loginen.gif')}}" alt="{{__('general.werewolf')}}"
+										<img src="{{asset('img/night-stamp/faction-swarm-card.svg')}}" alt="{{__('general.faction_swarm')}}"
 											 name="pic2" border="0">
 									</a>
 								</td>
@@ -60,7 +60,7 @@
 			</div>
 			<div class="wrap-left clearfix">
 				<div class="wrap-content wrap-right clearfix">
-					<h2><img src="{{asset('img/symbols/race'.$race.'small.gif')}}" alt=""/>{{__('general.menu_register')}}</h2>
+					<h2>{!! user_race_logo_small() !!}{{__('general.menu_register')}}</h2>
 					<div class="table-wrap">
 						<script type="text/javascript">
 						    $(function () {
@@ -171,7 +171,7 @@
 										</table>
 									</td>
 									<td valign="top">
-										<img src="{{asset('img/symbols/race'.$race.'.gif')}}" alt="{{$race == 1 ? __('vampire') : __('werewolf')}}" >
+										<img src="{{asset($race == 1 ? 'img/night-stamp/faction-house-card.svg' : 'img/night-stamp/faction-swarm-card.svg')}}" alt="{{$race == 1 ? __('general.faction_house') : __('general.faction_swarm')}}" width="220">
 									</td>
 								</tr>
 							</table>
@@ -187,3 +187,4 @@
 		</div>
     @endif
 @endsection
+

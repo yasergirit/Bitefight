@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="220" height="150" viewBox="0 0 220 150">
+  <rect width="220" height="150" rx="18" fill="#2a181b" stroke="#d4b07a"/>
+  <path d="M46 94 C62 62 92 48 116 58 C134 65 144 80 158 96" stroke="#e7d8b7" stroke-width="6" fill="none"/>
+  <circle cx="84" cy="54" r="10" fill="#d4b07a"/>
+  <text x="34" y="126" fill="#efe1c2" font-size="22" font-family="Georgia, serif">Kul Surusu</text>
+</svg>

@@ -26,7 +26,7 @@ class HomePage extends Page
     {
         $browser->visit($this->url())
             ->assertPathIs($this->url())
-            ->assertSeeIn('@currentPageHeader', 'Bitefight');
+            ->assertSeeIn('@currentPageHeader', 'Night Stamp');
     }
 
     /**
